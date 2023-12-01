@@ -18,7 +18,20 @@ export const login = createAsyncThunk('login', async(payload: LoginType) => {
     
     return response.data
 })
-
+const id: number = 1;
+const _id: any = '1';
+if(id === _id){
+    // çalışmaz
+}
+if(id == _id){
+    // çalışır
+}
+if(id === Number(_id)){
+    // çalışır
+}
+if(id === parseInt(_id)){
+    // çalışır
+}
 export const appPostsSlice = createSlice({
     name: 'getPosts',
     initialState: {
